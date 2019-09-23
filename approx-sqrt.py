@@ -6,9 +6,13 @@ def sqrt(x):
     while abs(z*z - x) >= 0.01:
         #   Get a better approximation for sqrt
         z -= (z*z - x) / (2*z)
-    
+
     return z
 
 
-
-sqrt(8.0)
+#   Calculate the sqrt of 8
+z = sqrt(16.0)
+#   Print z
+print(z)
+#   Print the sqrt of z
+print(z*z)
