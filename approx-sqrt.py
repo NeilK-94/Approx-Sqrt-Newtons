@@ -1,0 +1,14 @@
+def sqrt(x):
+    #   Initial guess
+    z = 1.0
+    #   Keep getting a better estiate for the sqrt of x
+    #   until you are within 2 decimal places
+    while abs(z*z - x) >= 0.01:
+        #   Get a better approximation for sqrt
+        z -= (z*z - x) / (2*z)
+    
+    return z
+
+
+
+sqrt(8.0)
